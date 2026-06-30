@@ -1,7 +1,7 @@
 // place files you want to import through the `$lib` alias in this folder.
 
 export let seo = {
-	title: 'Target - Best FiveM Private Cheat vs. All Competitors | Undetected ESP & Aimbot 2025',
+	title: 'Target - FiveM Private Cheat',
 	description:
 		'Target vs. every FiveM private cheat out there — and we win. Undetected ESP, aimbot, radar hack and more. Trusted by thousands of players. Safe, fast, 24/7 updates. #1 FiveM cheat at targetpriv.xyz',
 	image: 'https://targetpriv.xyz/og-image.png',
