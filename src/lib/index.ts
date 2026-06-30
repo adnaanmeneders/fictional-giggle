@@ -1,9 +1,9 @@
 // place files you want to import through the `$lib` alias in this folder.
 
 export let seo = {
-	title: 'Target - #1 FiveM Private Cheat | Undetected ESP & Aimbot 2025',
+	title: 'Target - Best FiveM Private Cheat vs. All Competitors | Undetected ESP & Aimbot 2025',
 	description:
-		'Target is the most advanced FiveM private cheat with undetected ESP, aimbot, radar, and more. Trusted by thousands. Safe, fast, and updated 24/7. Buy now at targetpriv.xyz',
+		'Target vs. every FiveM private cheat out there — and we win. Undetected ESP, aimbot, radar hack and more. Trusted by thousands of players. Safe, fast, 24/7 updates. #1 FiveM cheat at targetpriv.xyz',
 	image: 'https://targetpriv.xyz/og-image.png',
 	twitter: '@targetpriv',
 	url: 'https://targetpriv.xyz',
@@ -25,5 +25,8 @@ export let seo = {
 		'fivem cheat 2025, fivem hack 2025, best fivem cheat 2025, undetected fivem 2025, ' +
 		// Long tail
 		'how to cheat on fivem, fivem cheat menu, fivem cheat download, fivem private script, ' +
-		'fivem lua script, fivem resource cheat, best private fivem cheat, fivem cheat provider'
+		'fivem lua script, fivem resource cheat, best private fivem cheat, fivem cheat provider, ' +
+		// VS / comparison keywords
+		'fivem private cheat vs, best fivem cheat vs, target vs fivem cheat, fivem cheat comparison, ' +
+		'fivem cheat review, fivem cheat ranking, top fivem cheats, fivem cheat list, fivem cheat site'
 };
