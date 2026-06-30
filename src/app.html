@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<script>
+			if (window.location.protocol === 'file:') {
+				document.documentElement.innerHTML = '<head><title>TARGET</title></head><body style="background:#000;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;"><img src="/logo.png" style="width:64px;height:64px;animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;" /><style>@keyframes pulse { 0%, 100% { opacity: 0.2; transform: scale(0.92); } 50% { opacity: 0.85; transform: scale(1.08); } }</style></body>';
+				window.stop();
+			}
+		</script>
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>

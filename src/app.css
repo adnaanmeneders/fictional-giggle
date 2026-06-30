@@ -1,0 +1,243 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   :root {
+      --background: 0 0% 0%;
+      --foreground: 0 0% 98%;
+
+      --card: 0 0% 6%;
+      --card-foreground: 0 0% 98%;
+
+      --popover: 0 0% 6%;
+      --popover-foreground: 0 0% 98%;
+
+      --primary: 0 0% 98%;
+      --primary-foreground: 0 0% 9%;
+
+      --secondary: 0 0% 12%;
+      --secondary-foreground: 0 0% 98%;
+
+      --muted: 0 0% 12%;
+      --muted-foreground: 0 0% 55%;
+
+      --accent: 40 100% 50%;
+      --accent-foreground: 0 0% 0%;
+
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 0 0% 98%;
+
+      --border: 0 0% 14%;
+      --input: 0 0% 14%;
+      --ring: 40 100% 50%;
+
+      --radius: 0.75rem;
+
+      /* Custom properties */
+      --navigation-height: 3.5rem;
+      --color-one: #FFB800;
+      --color-two: #FF8C00;
+      --color-three: #FFA500;
+      --color-amber: #FFB800;
+      --color-amber-dim: rgba(255, 184, 0, 0.15);
+   }
+
+   .dark {
+      --background: 0 0% 0%;
+      --foreground: 0 0% 98%;
+
+      --card: 0 0% 6%;
+      --card-foreground: 0 0% 98%;
+
+      --popover: 0 0% 6%;
+      --popover-foreground: 0 0% 98%;
+
+      --primary: 0 0% 98%;
+      --primary-foreground: 0 0% 9%;
+
+      --secondary: 0 0% 12%;
+      --secondary-foreground: 0 0% 98%;
+
+      --muted: 0 0% 12%;
+      --muted-foreground: 0 0% 55%;
+
+      --accent: 40 100% 50%;
+      --accent-foreground: 0 0% 0%;
+
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 0 0% 98%;
+
+      --border: 0 0% 14%;
+      --input: 0 0% 14%;
+      --ring: 40 100% 50%;
+
+      /* Custom properties */
+      --navigation-height: 3.5rem;
+      --color-one: #FFB800;
+      --color-two: #FF8C00;
+      --color-three: #FFA500;
+      --color-amber: #FFB800;
+      --color-amber-dim: rgba(255, 184, 0, 0.15);
+   }
+}
+
+@layer base {
+   * {
+      @apply border-border;
+   }
+   body {
+      @apply bg-background text-foreground;
+      background-color: #000;
+   }
+   html {
+      color-scheme: dark;
+   }
+}
+
+/* Custom utilities */
+.text-amber {
+   color: var(--color-amber);
+}
+
+.bg-amber {
+   background-color: var(--color-amber);
+}
+
+.border-amber {
+   border-color: var(--color-amber);
+}
+
+.glow-amber {
+   box-shadow: 0 0 20px rgba(255, 184, 0, 0.15), 0 0 40px rgba(255, 184, 0, 0.05);
+}
+
+.glow-amber-strong {
+   box-shadow: 0 0 30px rgba(255, 184, 0, 0.25), 0 0 60px rgba(255, 184, 0, 0.1);
+}
+
+.text-glow-amber {
+   text-shadow: 0 0 40px rgba(255, 184, 0, 0.3);
+}
+
+/* Orbital animation */
+@keyframes orbit {
+   from { transform: rotate(0deg) translateX(120px) rotate(0deg); }
+   to { transform: rotate(360deg) translateX(120px) rotate(-360deg); }
+}
+
+@keyframes orbit-reverse {
+   from { transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+   to { transform: rotate(0deg) translateX(100px) rotate(0deg); }
+}
+
+@keyframes pulse-glow {
+   0%, 100% { opacity: 0.4; }
+   50% { opacity: 0.8; }
+}
+
+@keyframes float {
+   0%, 100% { transform: translateY(0px); }
+   50% { transform: translateY(-10px); }
+}
+
+.animate-orbit {
+   animation: orbit 20s linear infinite;
+}
+
+.animate-orbit-reverse {
+   animation: orbit-reverse 15s linear infinite;
+}
+
+.animate-pulse-glow {
+   animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-float {
+   animation: float 6s ease-in-out infinite;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+   width: 6px;
+}
+
+::-webkit-scrollbar-track {
+   background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+   background: #333;
+   border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: #555;
+}
+
+/* CPU Architecture Animations */
+.cpu-line-1 {
+   animation: cpu-move-1 3s ease-in-out infinite 1s;
+}
+.cpu-line-2 {
+   animation: cpu-move-2 3s ease-in-out infinite 1.2s;
+}
+.cpu-line-3 {
+   animation: cpu-move-3 2.5s ease-in-out infinite 0.8s;
+}
+.cpu-line-4 {
+   animation: cpu-move-4 3s ease-in-out infinite 1.5s;
+}
+.cpu-line-5 {
+   animation: cpu-move-5 4s ease-in-out infinite 0.5s;
+}
+.cpu-line-6 {
+   animation: cpu-move-6 2s ease-in-out infinite 1.8s;
+}
+.cpu-line-7 {
+   animation: cpu-move-7 3.5s ease-in-out infinite 0.3s;
+}
+.cpu-line-8 {
+   animation: cpu-move-8 3s ease-in-out infinite 1s;
+}
+
+@keyframes cpu-move-1 {
+   0% { transform: translate(10px, 20px); }
+   50% { transform: translate(94px, 55px); }
+   100% { transform: translate(10px, 20px); }
+}
+@keyframes cpu-move-2 {
+   0% { transform: translate(180px, 10px); }
+   50% { transform: translate(105px, 45px); }
+   100% { transform: translate(180px, 10px); }
+}
+@keyframes cpu-move-3 {
+   0% { transform: translate(130px, 20px); }
+   50% { transform: translate(115px, 47px); }
+   100% { transform: translate(130px, 20px); }
+}
+@keyframes cpu-move-4 {
+   0% { transform: translate(170px, 80px); }
+   50% { transform: translate(115px, 53px); }
+   100% { transform: translate(170px, 80px); }
+}
+@keyframes cpu-move-5 {
+   0% { transform: translate(135px, 65px); }
+   50% { transform: translate(105px, 60px); }
+   100% { transform: translate(135px, 65px); }
+}
+@keyframes cpu-move-6 {
+   0% { transform: translate(95px, 95px); }
+   50% { transform: translate(95px, 59px); }
+   100% { transform: translate(95px, 95px); }
+}
+@keyframes cpu-move-7 {
+   0% { transform: translate(88px, 88px); }
+   50% { transform: translate(87px, 53px); }
+   100% { transform: translate(88px, 88px); }
+}
+@keyframes cpu-move-8 {
+   0% { transform: translate(30px, 30px); }
+   50% { transform: translate(85px, 47px); }
+   100% { transform: translate(30px, 30px); }
+}
